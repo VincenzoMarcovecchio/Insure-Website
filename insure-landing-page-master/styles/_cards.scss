@@ -1,0 +1,119 @@
+.cards {
+  height: 500px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 4rem;
+  margin-top: 20rem;
+  @media screen and(max-width:999px) {
+    height: 700px;
+  }
+  @media screen and(max-width:750px) {
+    margin-top: 5rem;
+    height: 1400px;
+    &:before {
+      content: "";
+      position: absolute;
+      top: -200px;
+      right: -10px;
+      width: 100%;
+      height: 400px;
+      background-image: url(/insure-landing-page-master/images/bg-pattern-intro-right-mobile.svg);
+      background-position: right;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  & .titleSection2 {
+    width: 400px;
+    margin-right: auto;
+    font-size: 3.8rem;
+    margin-bottom: 5rem;
+    position: relative;
+    @media screen and(max-width:999px) {
+      margin-bottom: 4rem;
+      font-size: 2.5rem;
+    }
+    @media screen and(max-width:750px) {
+      text-align: center;
+      margin: 0 auto 4rem auto;
+      font-size: 2.5rem;
+      width: 100%;
+    }
+
+    .whiteLine {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 150%;
+      width: 150px;
+      border-top: 1.8px solid $GrayishBlue;
+      @media screen and(max-width:750px) {
+        display: none;
+      }
+    }
+  }
+
+  & .cardsContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    @media screen and(max-width:999px) {
+      flex-direction: column;
+    }
+
+    & .card {
+      width: 30%;
+      @media screen and(max-width:999px) {
+        height: 150px;
+        width: 100%;
+        display: flex;
+        border: 1px solid $GrayishBlue;
+        align-items: center;
+        margin-bottom: 2rem;
+        border-radius: 4px;
+      }
+      @media screen and(max-width:750px) {
+        flex-direction: column;
+        height: 380px;
+        padding: 50px 10px 10px 10px;
+        width: 90%;
+        margin: 0 auto 2rem auto;
+      }
+
+      & img {
+        margin-bottom: 2rem;
+        @media screen and(max-width:999px) {
+          margin: 0 1.5rem 0 1rem;
+        }
+        @media screen and(max-width:750px) {
+          margin: 0 0 3.2rem 0;
+        }
+      }
+
+      & h3 {
+        font-size: 1.7rem;
+        margin-bottom: 1.2rem;
+        font-family: "DM Serif Display", serif;
+        @media screen and(max-width:999px) {
+          margin: 0 1rem 0 0;
+        }
+        @media screen and(max-width:750px) {
+          margin: 0 0 0.5rem 0;
+          text-align: center;
+        }
+      }
+      & p {
+        color: $DarkGrayishViolet;
+        @media screen and(max-width:999px) {
+          margin: 0 1rem 0 1rem;
+        }
+        @media screen and(max-width:750px) {
+          text-align: center;
+          margin: 0.5rem auto 0;
+          width: 80%;
+        }
+      }
+    }
+  }
+}

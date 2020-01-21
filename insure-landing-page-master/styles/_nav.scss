@@ -1,0 +1,115 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  text-transform: uppercase;
+  margin: 2rem auto;
+  @media screen and(max-width:750px) {
+  }
+
+  .toggle-label {
+    width: 40px;
+    height: 40px;
+    background-image: url(/insure-landing-page-master/images/icon-hamburger.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: none;
+    @media screen and(max-width:750px) {
+      display: inherit;
+    }
+  }
+
+  & ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    white-space: nowrap;
+    @media screen and(max-width:750px) {
+      z-index: 500000000000;
+      flex-direction: column;
+      position: fixed;
+      left: 0;
+      top: 99px;
+      background-color: #2c2640;
+      width: 100vw;
+      height: 100vh;
+      background-image: url(/insure-landing-page-master/images/bg-pattern-mobile-nav.svg);
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: none;
+      margin: 0;
+    }
+  }
+
+  & li {
+    margin-right: 3rem;
+    @media screen and(max-width:750px) {
+      margin: 2.5rem auto 0 auto;
+      width: 90%;
+      text-align: center;
+    }
+  }
+  & a {
+    text-decoration: none;
+    color: $DarkGrayishViolet;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    @media screen and(max-width:750px) {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      display: block;
+      color: #fff;
+    }
+    &:hover {
+      color: $VeryDarkViolet;
+
+      @media screen and(max-width:750px) {
+        color: $GrayishBlue;
+      }
+    }
+  }
+}
+.view-nav {
+  text-transform: uppercase;
+  padding: 0.5rem 1.5rem;
+  border: 1.5px solid $VeryDarkViolet;
+  background: none;
+  color: $VeryDarkViolet;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  @media screen and(max-width:750px) {
+    border: 1px solid #fff !important;
+    color: #fff;
+    margin-top: 2rem;
+    width: 90%;
+    height: 50px;
+  }
+  &:hover {
+    background-color: $GrayishBlue;
+    color: #fff;
+  }
+}
+.nav-active {
+  display: inherit;
+}
+
+.bar-active {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  margin: 0 auto;
+  height: 110px;
+  width: 100%;
+  background-color: white;
+  padding: 0 15px;
+}
+.close {
+  background-image: url(/insure-landing-page-master/images/icon-close.svg) !important;
+}
