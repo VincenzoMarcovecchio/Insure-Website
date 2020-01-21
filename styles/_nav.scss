@@ -11,7 +11,7 @@ nav {
   .toggle-label {
     width: 40px;
     height: 40px;
-    background-image: url(../images/icon-hamburger.svg);
+    background-image: url(./images/icon-hamburger.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -111,5 +111,5 @@ nav {
   padding: 0 15px;
 }
 .close {
-  background-image: url(/../images/icon-close.svg) !important;
+  background-image: url(./images/icon-close.svg) !important;
 }
