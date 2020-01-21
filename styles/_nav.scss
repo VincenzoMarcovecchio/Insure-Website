@@ -11,7 +11,7 @@ nav {
   .toggle-label {
     width: 40px;
     height: 40px;
-    background-image: url(/insure-landing-page-master/images/icon-hamburger.svg);
+    background-image: url(../images/icon-hamburger.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -36,7 +36,7 @@ nav {
       background-color: #2c2640;
       width: 100vw;
       height: 100vh;
-      background-image: url(/insure-landing-page-master/images/bg-pattern-mobile-nav.svg);
+      background-image: url(../images/bg-pattern-mobile-nav.svg);
       background-position: bottom;
       background-repeat: no-repeat;
       background-size: contain;
@@ -111,5 +111,5 @@ nav {
   padding: 0 15px;
 }
 .close {
-  background-image: url(/insure-landing-page-master/images/icon-close.svg) !important;
+  background-image: url(/../images/icon-close.svg) !important;
 }
