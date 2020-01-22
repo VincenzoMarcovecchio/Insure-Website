@@ -5,8 +5,6 @@ nav {
   width: 90%;
   text-transform: uppercase;
   margin: 2rem auto;
-  @media screen and(max-width:750px) {
-  }
 
   .toggle-label {
     width: 40px;
@@ -28,15 +26,14 @@ nav {
     margin-left: 2rem;
     white-space: nowrap;
     @media screen and(max-width:750px) {
-      z-index: 500000000000;
       flex-direction: column;
       position: fixed;
       left: 0;
       top: 99px;
       background-color: #2c2640;
       width: 100vw;
-      height: 100vh;
-      background-image: url(./images/bg-pattern-mobile-nav.svg);
+      height: 88vh;
+      background-image: url(../images/bg-pattern-mobile-nav.svg);
       background-position: bottom;
       background-repeat: no-repeat;
       background-size: contain;
@@ -91,8 +88,12 @@ nav {
     height: 50px;
   }
   &:hover {
-    background-color: $GrayishBlue;
+    background-color: $DarkViolet;
     color: #fff;
+    @media screen and(max-width:750px) {
+      background-color: $GrayishBlue;
+      color: #fff;
+    }
   }
 }
 .nav-active {
@@ -108,7 +109,7 @@ nav {
   height: 110px;
   width: 100%;
   background-color: white;
-  padding: 0 15px;
+  padding: 0 20px;
 }
 .close {
   background-image: url(../images/icon-close.svg) !important;

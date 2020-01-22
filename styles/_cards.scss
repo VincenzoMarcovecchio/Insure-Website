@@ -5,16 +5,18 @@
   margin-bottom: 4rem;
   margin-top: 20rem;
   @media screen and(max-width:999px) {
-    height: 700px;
+    height: 800px;
   }
   @media screen and(max-width:750px) {
     margin-top: 5rem;
     height: 1400px;
+
     &:before {
       content: "";
       position: absolute;
       top: -200px;
-      right: -20px;
+      right: 0px;
+      transform: translateX(10px);
       width: 100%;
       height: 400px;
       background-image: url(../images/bg-pattern-intro-right-mobile.svg);
@@ -78,7 +80,7 @@
         height: 380px;
         padding: 50px 10px 10px 10px;
         width: 90%;
-        max-width: 400px;
+        max-width: 300px;
         margin: 0 auto 2rem auto;
       }
 
