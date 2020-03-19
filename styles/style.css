@@ -91,7 +91,7 @@ main:after {
   position: absolute;
   top: 0px;
   right: 0px;
-  width: 100%;
+  width:450px;
   height: 85%;
   z-index: 2;
   background-image: url(../images/bg-pattern-intro-right-desktop.svg);
